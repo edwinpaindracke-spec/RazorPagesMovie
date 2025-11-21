@@ -5,20 +5,17 @@
     ViewData["Title"] = "Index";
 }
 
+
+<div class="main-content">
+    <h1>Welcome to Ekzen 
+        Movies</h1>
+    <p>Discover and explore your favorite movies</p>
+</div>
+
 <h1>Index</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
-
-    <form>
-        <p>
-            <select asp-for="MovieGenre" asp-items="Model.Genres">
-                <option value="">All</option>
-            </select>
-            <label>Title: <input type="text" asp-for="SearchString" /></label>
-            <input type="submit" value="Filter" />
-        </p>
-    </form>
 </p>
 <table class="table">
     <thead>

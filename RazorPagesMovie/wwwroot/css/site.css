@@ -29,3 +29,35 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+/* Background and general styling */
+body {
+    background: linear-gradient(to right, #141e30, #243b55); /* Dark blue gradient */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Center content vertically and horizontally */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Headline styling */
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Subtitle or tagline */
+.main-content p {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+

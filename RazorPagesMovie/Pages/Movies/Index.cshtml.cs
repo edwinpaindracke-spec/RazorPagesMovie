@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RazorPagesMovie.Data;
 using RazorPagesMovie.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RazorPagesMovie.Pages.Movies
 {
+    
     public class IndexModel : PageModel
     {
         private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
@@ -55,6 +57,8 @@ namespace RazorPagesMovie.Pages.Movies
             // </snippet_search_selectList>
             Movie = await movies.ToListAsync();
         }
-
     }
 }
+
+
+        
