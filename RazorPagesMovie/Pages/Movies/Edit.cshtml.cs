@@ -22,7 +22,16 @@ namespace RazorPagesMovie.Pages.Movies
             _context = context;
         }
 
-        [BindProperty]
+        [BindProperty(SupportsGet = true)]
+        public string? SearchString { get; set; }
+
+        public SelectList? Genres { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public string? MovieGenre { get; set; }
+
+
+
         public Movie Movie { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
