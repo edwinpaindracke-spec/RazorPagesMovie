@@ -11,11 +11,10 @@
 using System;
 using System.Reflection;
 
-
 [assembly: System.Reflection.AssemblyCompanyAttribute("RazorPagesMovie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd93e4368f9b5f3cdfc3834ff84f8da696ca6f48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+264c2e8f5187ee50a87e898c2de6d4661d0c4ad4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RazorPagesMovie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RazorPagesMovie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
