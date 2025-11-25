@@ -22,86 +22,16 @@ body {
   margin-bottom: 60px;
 }
 body {
-    background-color: #f0f4ff; /* light blue */
-}
-.hero-section {
-    min-height: 80vh; /* Full-height hero */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    background-color: #B4C4FA; /* light blue */
 }
 
-/* Background Image */
-.hero-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-    transform: scale(1.05);
-    transition: transform 20s linear;
+
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
 }
 
-.hero-section:hover .hero-bg img {
-    transform: scale(1.1); /* subtle zoom on hover */
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
 }
-
-/* Animated Gradient Overlay */
-.hero-gradient {
-    background: linear-gradient(270deg, rgba(255,0,150,0.2), rgba(0,204,255,0.2), rgba(255,255,0,0.2));
-    background-size: 600% 600%;
-    animation: gradientAnimation 20s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Fade-in Animations */
-.hero-title, .hero-subtitle, .hero-button {
-    animation: fadeInUp 1s forwards;
-}
-
-.hero-title {
-    animation-delay: 0.3s;
-}
-
-.hero-subtitle {
-    animation-delay: 0.6s;
-}
-
-.hero-button {
-    animation-delay: 0.9s;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
-    .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-        color: var(--bs-secondary-color);
-        text-align: end;
-    }
-
-    .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-        text-align: start;
-    }
