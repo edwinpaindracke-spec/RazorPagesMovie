@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -60,8 +61,9 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\site.css
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\favicon.ico
+C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\css\site.css
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\js\site.js
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -121,5 +123,3 @@ C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\jquery\dist
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\jquery\dist\jquery.slim.js
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\jquery\dist\jquery.slim.min.map
-C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\wwwroot\css\site.css
