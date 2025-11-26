@@ -22,6 +22,10 @@ namespace RazorPagesMovie.Pages.Movies
             _context = context;
         }
 
+        [BindProperty]
+        public Movie Movie { get; set; } = default!;
+
+
         [BindProperty(SupportsGet = true)]
         public string? SearchString { get; set; }
 
@@ -30,25 +34,43 @@ namespace RazorPagesMovie.Pages.Movies
         [BindProperty(SupportsGet = true)]
         public string? MovieGenre { get; set; }
 
+        [BindProperty]
+        public IFormFile? ImageFile { get; set; }
 
-
-        public Movie Movie { get; set; } = default!;
-
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(int id)
         {
-            if (id == null)
-            {
+            var movieToUpdate = await _context.Movie.FindAsync(id);
+
+            if (movieToUpdate == null)
                 return NotFound();
+
+            if (await TryUpdateModelAsync<Movie>(
+                    movieToUpdate,
+                    "Movie",
+                    m => m.Title, m => m.ReleaseDate, m => m.Genre, m => m.Price, m => m.Rating))
+            {
+                // ✅ Handle image upload
+                if (ImageFile != null)
+                {
+                    var extension = Path.GetExtension(ImageFile.FileName);
+                    var fileName = movieToUpdate.Id + extension;
+
+                    var root = Directory.GetCurrentDirectory();
+                    var filePath = Path.Combine(root, "wwwroot/images/movies", fileName);
+
+                    using (var stream = System.IO.File.Create(filePath))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+                }
+
+                await _context.SaveChangesAsync();
+                return RedirectToPage("./Index");
             }
 
-            var movie =  await _context.Movie.FirstOrDefaultAsync(m => m.Id == id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
-            
             return Page();
         }
+
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more information, see https://aka.ms/RazorPagesCRUD.

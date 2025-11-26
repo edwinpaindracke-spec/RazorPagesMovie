@@ -26,6 +26,8 @@
                     {
                         <a class="btn btn-warning btn-sm" href="./Edit?id=@movie.Id">Edit</a>
                         <a class="btn btn-danger btn-sm" href="./Delete?id=@movie.Id">Delete</a>
+                        <a asp-page="./Details" asp-route-id="@Model.Movie Id" class="btn btn-primary">View</a>
+
                     }
 
                    
