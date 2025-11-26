@@ -235,6 +235,7 @@ C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\rjsmcs
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\scopedcss\bundle\RazorPagesMovie.styles.css
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\scopedcss\projectbundle\RazorPagesMovie.bundle.scp.css
+C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\compressed\suqtl8s2yo-pglogju30o.gz
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\compressed\yrcbu6ia9d-61n19gt1b8.gz
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\compressed\jes464dqu4-xtxxf3hu2r.gz
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\compressed\lwpnva2o8i-bqjiyaj88i.gz
@@ -309,4 +310,3 @@ C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\refint
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\RazorPagesMovie.pdb
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\RazorPagesMovie.genruntimeconfig.cache
 C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\ref\RazorPagesMovie.dll
-C:\Users\PC\source\repos\RazorPagesMovie\RazorPagesMovie\obj\Debug\net9.0\compressed\suqtl8s2yo-pglogju30o.gz

@@ -1,5 +1,39 @@
 ﻿@page
 @model RazorPagesMovie.Pages.Movies.IndexModel
+@using Microsoft.AspNetCore.Identity
+
+
+    <h1 class="text-center mb-4">🎬 Movie Gallery</h1>
+
+<div class="row">
+    @foreach (var movie in Model.Movie)
+    {
+        var jpg = $"/images/movies/{movie.Id}.jpg";
+        var png = $"/images/movies/{movie.Id}.png";
+        var imgPath = System.IO.File.Exists("wwwroot" + jpg) ? jpg :
+                      System.IO.File.Exists("wwwroot" + png) ? png : "/images/noimage.png";
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow-sm">
+                <img src="@imgPath" class="card-img-top" style="height:320px; object-fit:cover;" />
+                <div class="card-body text-center">
+                    <h5>@movie.Title</h5>
+                    <p>@movie.Genre</p>
+
+                    <a class="btn btn-primary btn-sm" href="./Details?id=@movie.Id">View</a>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-warning btn-sm" href="./Edit?id=@movie.Id">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="./Delete?id=@movie.Id">Delete</a>
+                    }
+
+                   
+                </div>
+            </div>
+        </div>
+    }
+</div>
 
 @{
     ViewData["Title"] = "Index";
